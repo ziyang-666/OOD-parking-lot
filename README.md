@@ -1,25 +1,26 @@
-# Around
-Description: a social app which can search the post information, photo, video by the user. The user can also post the image and video.
+# Parking Lot OOD
+Description: a project contains basic function of parking lot
 
-## task
-* Designed and implemented a social network web application with React JS.
-* Implemented features for users to create and browse posts and support search nearby posts.
-* Improved the authentication using token-based registration/login/logout flow with React Router v4 and server-side user authentication with JWT.
-Backend
-* Launched a scalable web service in Go to handle posts and deployed to Google Cloud (Google App Engine) 
-* deploy the frontend on the amazon amplify
+## Functionality
+* Basic funtionality: for a given vehicle, tell whether there is available spot in the parking lot
+* Possible extensions: provide available spot locations: assign spot to the vehicle
 
-## deploy at
-https://main.d2rpjckf5nqy94.amplifyapp.com
+## Assumptions:
+1. multiple levels
+2. Check vehicle size
 
-## Effect
-![app](app.jpg)
+## API
+* boolean hasSpot(Vehicle v);
+* boolean park(Vehicle v);
+* boolean leave(Vehicle v);
 
-## Problem:
-The elasticsearch currently only return 10 result
+## classes:
+* ParkingLot, Level, Vehicle, ParkingSpot, Car, Truck
 
-## To do:
-support to return more result.
+# UML
+![UML](ParkingLot.png)
+
+
 
 
 
