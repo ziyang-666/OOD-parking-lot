@@ -18,7 +18,7 @@ Description: a project contains basic function of parking lot
 * ParkingLot, Level, Vehicle, ParkingSpot, Car, Truck
 
 # UML
-![UML](ParkingLot.png)
+![MainPage](./UML/ParkingLot.png)
 
 
 
